@@ -1,0 +1,115 @@
+<!doctype html>
+<html>
+  <head>
+    <title>3/12</title>
+  </head>
+  <body>
+    <script>
+    //자바스크립트 자료형
+    var string = 'miro'; //string
+    var number = 3; //number
+    var num = '3'; //string
+    var success = true; //boolean
+    var success1 = 'true' //string
+    var aaa ='';
+    var bbb = 'b';
+    var ccc = undefined;
+    //object
+    var obj1 = {
+      //name, major, studentId
+      name/*key*/: 'Hyeonyong'/*value*/,  //obj에서 key를구분할 때 ,로 구분.
+      major: 'electronic',
+      studentId: 2014104414
+    };
+    //array
+    var arr1 = ['Hyeonyong', 2014104414, {major: 'electronic'}, [1]    ];
+    //배열 안에는 문자열, 숫자, object, 배열이 들어갈 수 있으며 ,로 구분한다.
+    //obj와 상당히 비슷, 그러나 obj를 더 많이 씀. 인덱스 번호를 알 수 없기 때문에
+    //function
+    var addOne = function(x)/*x는 입력값, 안쓰면 입력값이 없는 것*/{
+      return x + 1;      //x+1이라는 것에 자료형이 무엇인지 정해주지 않아서 "31"이라는 string을 반환
+    }
+    </script>
+    <script>
+      //자바스크립트 연산자
+      var mod = 291 % 5; //1(291을 5로 나눴을 때의 나머지)
+      var string1 = '안녕하세요.' ; //안녕하세요.
+      var string2 = '안녕' + '하세요' ; //안녕하세요. 문자열연산자
+      var enc = 1;
+      var result = 5;
+      var i = 9;
+      result += i; // result = result + i -> result = 14
+      result =+ i; // result1 = result1 - i = result1 = -4
+      //비교연산자 ==, !=
+      var isItTrue = 4*6 == 5*5;  //false
+      var isItFalse = 4*6 != 5*5; //true
+      //===, !== 이것들은 자료형까지 비교한다.
+
+      //삼항연산자
+      var pos = (81 == 9*9) ? 'yes' : 'no';  //yes
+      var pos1 = (81 != 9*9) ? 'yes' : 'no'; //no
+      //논리연산자
+      //var a = b && c; //b가 거짓이면 뒤에있는 c는 검사를 하지않고 바로 false 반환
+      //var d = e || f; //e가 참이면 뒤에있는 f는 검사를 하지않고 바로 true 반환
+    </script>
+    <script>
+      //자바스크립트 조건문
+      //if-else
+      var function1 = function(){ //새로고침을 할 때마다 alert가 뜨는 것을 막기 위해 함수추가한 거
+      var name = '박세욱';
+      if(name == '박세욱'){
+        alert(name);
+      }else{
+        alert('박세욱이아닙니다.')
+      }
+      //삼항연산자로 바꿀 수 있음.
+      (name == '박세욱') ? alert(name) : alert('박세욱이아닙니다.'); //위의 if-else문과 같은 기능
+    }
+      //switch
+      var function2 = function(x){
+        switch(x){
+          case 1:
+          alert('1입니다.')
+          break;
+          case 2:
+          alert('2입니다.')
+          break;
+          default:
+          alert('1과2가 아닌 다른 숫자입니다.'); //switch문에 break 안 걸어주면 계속함
+        }
+      }
+    </script>
+    <script>
+      //for문
+      var calculate = function(x){
+        var res = 0;
+        for (var i=1; i<=x; i++){
+          res += i;
+        }
+        return res;
+      }
+      //while문
+      var o = 10;
+      var cal = function(x){
+        while(x<10){
+          if(x==0)
+          break;
+          x++;
+        }
+        return x;
+      }
+      //do-while문
+      var p = 10;
+      var cal1 = function(x){
+        do{
+          if(x==p)
+          break;
+          x++;
+        }while(x<10)
+        return x;
+      }
+
+      var object = {"name":"pso","major":"electronic"}
+    </script>
+  </body>
+</html>
